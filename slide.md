@@ -31,7 +31,7 @@ Basis (基底)是一些向量的集合，通常以矩陣的 row vector 表示
 $$
 B =
 \begin{bmatrix}
-1 & 2 \\
+1 & 2 \\\\
 2 & 1
 \end{bmatrix}
 $$
@@ -41,7 +41,7 @@ $$
 而 Lattice 是 Basis 中的向量的**整數倍**線性組合出來的點集
 
 $$
-L=\left\{ \sum_{i=1}^{n}a_iv_i | a_i \in \mathbb{Z} \right\}
+L=\left\\{ \sum_{i=1}^{n}a_iv_i | a_i \in \mathbb{Z} \right\\}
 $$
 
 ---
@@ -123,7 +123,7 @@ LLL 有個額外的參數 $\delta \in (0.25,1)$
 LLL-Reduced 的 $B$ 中最短向量 $b_1$ 符合
 
 $$
-||b_1|| \leq (2/\sqrt{4\delta-1})^{n-1} \cdot \lambda_1(L) \\
+||b_1|| \leq (2/\sqrt{4\delta-1})^{n-1} \cdot \lambda_1(L) \\\\
 ||b_1|| \leq (2/\sqrt{4\delta-1})^{(n-1)/2} \cdot |\det(L)|^{1/n}
 $$
 
@@ -168,8 +168,8 @@ RSA 中有個 Wiener Attack 可以在 $d < \frac{1}{3}n^{\frac{1}{4}}$ 的情況
 ---
 
 $$
-ed \equiv 1 \pmod{\varphi(n)} \\
-ed = 1 + k\varphi(n) = 1 + k(n - s) \\
+ed \equiv 1 \pmod{\varphi(n)} \\\\
+ed = 1 + k\varphi(n) = 1 + k(n - s) \\\\
 ed - kn = 1-ks
 $$
 
@@ -182,7 +182,7 @@ $$
 $$
 B=
 \begin{bmatrix}
-e & \sqrt{n} \\
+e & \sqrt{n} \\\\
 n & 0
 \end{bmatrix}
 $$
@@ -203,9 +203,9 @@ $$
 
 $$
 \begin{aligned}
-|v|^2 &= (1-ks)^2+(d\sqrt{n})^2 \\
-      &\leq k^2s^2 + d^2n \\
-      &\leq 9nk^2 + d^2n \\
+|v|^2 &= (1-ks)^2+(d\sqrt{n})^2 \\\\
+      &\leq k^2s^2 + d^2n \\\\
+      &\leq 9nk^2 + d^2n \\\\
       &\leq 10nd^2
 \end{aligned}
 $$
@@ -281,10 +281,10 @@ $$
 $$
 B=
 \begin{bmatrix}
-1 & & & & b_1 \\
-& 1 & & & b_2 \\
-& & \ddots & & \vdots \\
-& & & 1 & b_n \\
+1 & & & & b_1 \\\\
+& 1 & & & b_2 \\\\
+& & \ddots & & \vdots \\\\
+& & & 1 & b_n \\\\
 0 & 0 & \cdots & 0 & -C
 \end{bmatrix}
 $$
@@ -302,10 +302,10 @@ $$
 $$
 B=
 \begin{bmatrix}
-1 & & & & Nb_1 \\
-& 1 & & & Nb_2 \\
-& & \ddots & & \vdots \\
-& & & 1 & Nb_n \\
+1 & & & & Nb_1 \\\\
+& 1 & & & Nb_2 \\\\
+& & \ddots & & \vdots \\\\
+& & & 1 & Nb_n \\\\
 -\frac{1}{2} & -\frac{1}{2} & \cdots & -\frac{1}{2} & -NC
 \end{bmatrix}
 $$
@@ -373,9 +373,9 @@ $$
 $$
 B=
 \begin{bmatrix}
-p & & & 0 \\
-& \ddots & & \vdots \\
-& & p & 0 \\
+p & & & 0 \\\\
+& \ddots & & \vdots \\\\
+& & p & 0 \\\\
 t_1 & \cdots & t_n & 1
 \end{bmatrix}
 $$
@@ -393,9 +393,9 @@ $$
 $$
 B=
 \begin{bmatrix}
-p & & & 0 \\
-& \ddots & & \vdots \\
-& & p & 0 \\
+p & & & 0 \\\\
+& \ddots & & \vdots \\\\
+& & p & 0 \\\\
 t_1 & \cdots & t_n & \frac{1}{p}
 \end{bmatrix}
 $$
@@ -567,7 +567,7 @@ Boneh and Durfee Attack
 ---
 
 $$
-ed \equiv 1 \pmod{\varphi(n)} \\
+ed \equiv 1 \pmod{\varphi(n)} \\\\
 ed = 1 + k\varphi(n) = 1 + k(n - s)
 $$
 
