@@ -54,6 +54,10 @@ load(
     "solver.sage"
 )  # https://raw.githubusercontent.com/rkm0959/Inequality_Solving_with_CVP/main/solver.sage
 
-result, applied_weights, fin = solve(M, lb, ub)
+result, applied_weights, fin = solve(M, lb, ub)  # PS: solve will mutate M, lb, ub
 assert vector(fin[:n]) == vector(zs), "failed to find zs"
 print(fin[:n])
+
+print(M.solve_left(result))
+print(vector(zs + ks))
+
